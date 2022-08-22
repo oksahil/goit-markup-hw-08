@@ -1,0 +1,26 @@
+.address {
+    font-style: normal;
+}
+
+.address__link,
+.address__tel,
+.address__mail {
+    @include fonts(null, 14px, 16px, 0.03em);
+}
+
+.address__tel,
+.address__mail {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address__link {
+    color: #FFFFFF;
+}
+
+.address__list {
+    margin-top: 20px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}

@@ -1,0 +1,28 @@
+.footer {
+    background-color: #2F303A;
+    padding-bottom: 60px;
+    &>.container {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+.footer__list-all {
+    display: flex;
+}
+
+.footer__contakty {
+    margin-right: 70px;
+    padding-top: 60px;
+}
+.footer__soc {
+    padding-top: 72px;
+}
+.footer__title {
+    @include fonts(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+

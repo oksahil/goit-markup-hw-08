@@ -1,0 +1,33 @@
+.bisness {
+    padding-top: var(--section-indent);
+    padding-bottom: var(--section-indent);
+}
+
+.bisness-list {
+    display: flex;
+    gap: 30px;
+}
+
+
+.bisness-title {
+    margin-bottom: 50px;
+}
+
+.bisness-item {
+    position: relative;
+}
+
+.bisness-item-top-text {
+    position: absolute;
+    left: 50%;
+    padding-top: 27px;
+    transform: translate(-50%, 0);
+    bottom: 0px;
+    @include fonts(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+}

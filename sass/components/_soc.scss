@@ -1,0 +1,40 @@
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.soc__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @include center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus,
+        &:hover {
+            background-color: var(--color-aktive);
+            cursor: pointer;
+    }
+}
+.soc__link--light {
+    background-color: #FFFFFF;
+}
+.soc__icon--light {
+    fill: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .soc__link:focus &,
+        .soc__link:hover & {
+            fill: #ffffff;
+    }
+}
+.soc__link--dark {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.soc__icon--dark {
+    fill: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        .soc__link:focus &,
+        .soc__link:hover & {
+            fill: #ffffff;
+    }
+}

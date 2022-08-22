@@ -1,0 +1,52 @@
+
+.subscribe {
+    padding-top: 72px;
+}
+
+.subscribe__email {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    @include fonts(null, 16px, 20px, 0.03em);
+    color: #FFFFFF;
+        &::placeholder {
+            @include fonts(null, 16px, 20px, 0.03em);
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+.subscribe__btn {
+    position: relative;
+    font-family: inherit;
+    @include fonts(700, 16px, 30px, 00.06em);
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 28px;
+    color: #FFFFFF;
+    background-color: var(--color-aktive);
+    min-width: 200px;
+    min-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+                background: #188CE8;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+            }
+}
+.subscribe__icon-telegram-btn {
+    position: absolute;
+    fill: #ffffff;
+    top: 50%;
+    right: 0%;
+    transform: translate(-100%, -50%);
+}

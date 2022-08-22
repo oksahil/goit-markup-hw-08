@@ -1,0 +1,5 @@
+.title-second {
+    @include fonts(700, 36px, 42px, 0.03em);
+    text-align: center;
+    color: var(--color-title);
+}
