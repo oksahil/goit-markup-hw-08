@@ -10,3 +10,9 @@
         align-items: center;
         justify-content: center;
 }
+
+@mixin media($w) {
+        @media screen and (min-width: $w) {
+        @content;
+        }
+}

@@ -48,6 +48,9 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .list {
@@ -74,11 +77,25 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .btn {
@@ -392,8 +409,20 @@ body {
 
 .team {
   background: #F5F4FA;
-  padding-top: var(--section-indent);
-  padding-bottom: var(--section-indent);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: var(--section-indent);
+    padding-bottom: var(--section-indent);
+  }
 }
 
 .team__title {
@@ -401,9 +430,20 @@ body {
 }
 
 .team__item {
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .team__item-title {
@@ -427,8 +467,8 @@ body {
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  width: calc((100% - 90px) / 4);
 }
 
 .team__item-content {
@@ -526,7 +566,7 @@ body {
 }
 
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
