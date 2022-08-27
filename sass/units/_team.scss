@@ -2,16 +2,7 @@
     background: #F5F4FA;
     padding-top: 60px;
     padding-bottom: 60px;
-    // @media screen and (min-width: 768px) {
-    //         padding-top: 60px;
-    //         padding-bottom: 60px;
-    //     }
-    //      @media screen and (min-width: 1200px) {
-    //          padding-top: var(--section-indent);
-    //          padding-bottom: var(--section-indent);
-             
-    //      }
-       
+    
         @include media(768px) {
             padding-top: 60px;
             padding-bottom: 60px;
@@ -24,7 +15,14 @@
 }
 
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @include media(768px) {
+           margin-bottom: 30px;
+        }
+    
+        @include media(1200px) {
+        margin-bottom: 50px;
+        }
 }
 
 .team__item {
@@ -34,12 +32,6 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    // @media screen and (min-width: 768px) {
-    //         width: calc((100% - 30px) / 2);
-    //     }
-    // @media screen and (min-width: 1200px) {
-    //         width: calc((100% - 90px) / 4);
-    //     }
           @include media(768px) {
             width: calc((100% - 30px) / 2);
           }
@@ -51,31 +43,34 @@
 
 .team__item-title {
     margin-bottom: 10px;
-    font-weight: 500;
-    color: var(--color-title);
-}
-
-.team__item-title,
-.team__item-text {
-    @include fonts(null, 16px, 19px, 0.03em);
+    @include fonts(500, 16px, 19px, 0.03em);
     text-align: center;
+    color: var(--color-title);
 }
 
 .team__item-text {
     color: var(--color-text);
     margin-bottom: 16px;
+    @include fonts(null, 16px, 19px, 0.03em);
+    text-align: center;
 }
 
 .team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    // width: calc((100% - 90px) / 4);
-    
+   
 }
 
 .team__item-content {
-    padding: 30px 32px;
+    padding: 30px 65px 24px 65px;
+    @include media(768px) {
+            padding: 30px 74px 24px 74px;
+        }
+    
+        @include media(1200px) {
+            padding: 30px 32px;
+        }
 }
 
 
