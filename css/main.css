@@ -735,43 +735,43 @@ body {
   background-color: #2F303A;
   padding-bottom: 60px;
 }
-.footer > .container {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer > .container {
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__list-all {
     display: flex;
-    gap: 165px;
     justify-content: space-between;
   }
 }
+
+.footer__list-all {
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__list-all {
+    display: flex;
+    gap: 165px;
+    text-align: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer__list-all {
-    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list-all {
+    display: flex;
   }
 }
 
-.footer__item-all {
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer__contakty {
+  margin-right: 0px;
   padding-top: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer__contakty {
-    text-align: center;
+    margin-right: 72px;
   }
 }
 
@@ -795,42 +795,54 @@ body {
 }
 
 .subscribe {
-  padding-top: 72px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding-top: 72px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+  }
 }
 
-.subscribe__items {
-  display: block;
-}
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   .subscribe__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
   }
 }
 
 .subscribe__email {
-  width: 100%;
+  width: 358px;
   height: 50px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   .subscribe__email {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 12px;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .subscribe__email {
+    width: 290px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe__email {
     width: 450px;
   }
@@ -839,16 +851,12 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe__btn {
   position: relative;
   font-family: inherit;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
