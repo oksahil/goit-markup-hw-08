@@ -302,14 +302,41 @@ body {
 
 .hero {
   background-color: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
   margin: 0px auto;
+}
+@media (min-devace-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg_mob_2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg_tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-devace-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg_tab_2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg.jpg);
+    max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-devace-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/images_main/img_bg_2x.jpg);
+  }
 }
 
 .performance {
@@ -319,8 +346,8 @@ body {
 .performance__title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -329,6 +356,22 @@ body {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .performance__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 390px) {
+  .performance__title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+  }
 }
 
 .performance__btn {
