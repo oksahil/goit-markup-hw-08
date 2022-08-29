@@ -373,8 +373,8 @@ body {
 
 .mob-menu-tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 30px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-aktive);
   display: block;
@@ -407,8 +407,8 @@ body {
 @media screen and (max-width: 350px) {
   .soc-mob-link {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.3333333333;
+    font-size: 10px;
+    line-height: 1.4;
     letter-spacing: 0.02em;
   }
 }
