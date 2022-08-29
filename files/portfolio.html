@@ -40,6 +40,54 @@
                     +38 096 111 11 11
                 </a>
             </div>
+
+            <button class="open-menu-btn" type="button">
+                <svg class="icon-mob-menu" width="40" height="40">
+                    <use href="./../images/icons.svg#icon-mob_menu"></use>
+                </svg>
+            </button>
+            
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="mob-btn-close">
+                            <svg class="mob-icon-close" width="18" height="18">
+                                <use href="./../images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <nav class="mob-menu-nav">
+                            <ul class="mob-menu-list list">
+                                <li class="mob-menu-item"><a href="./../index.html" class="mob-menu-link link">Студия</a></li>
+                                <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a>
+                                </li>
+                                <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mob-menu-booton">
+                        <div class="mob-menu-contakty">
+            
+                            <a href="tel:+380961111111" class="mob-menu-tel link">+38 096 111 11 11</a>
+                            <a href="mailto:info@devstudio.com" class="mob-menu-mail link">info@devstudio.com</a>
+                        </div>
+                        <ul class="soc-mob list">
+                            <li class="soc-mob-item">
+                                <a href="" class="soc-mob-link link">Instagram<span class="soc-line"> </span></a>
+                            </li>
+                            <li class="soc-mob-item">
+                                <a href="" class="soc-mob-link link">Twitter<span class="soc-line"></span></a>
+                            </li>
+                            <li class="soc-mob-item">
+                                <a href="" class="soc-mob-link link">Facebook<span class="soc-line"></span></a>
+                            </li>
+                            <li class="soc-mob-item">
+                                <a href="" class="soc-mob-link link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
     <main>
@@ -57,7 +105,23 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_1.jpg" width="370" alt="Технокряк">
+
+            <picture>
+                <source srcset="
+                                            ./../images/images_portfolio/services_img_1.jpg    1x,
+                                            ./../images/images_portfolio/services_img_1_2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                <source srcset="
+                                            ./../images/images_portfolio/services_img_1_tab.jpg    1x,
+                                            ./../images/images_portfolio/services_img_1_tab_2x.jpg 2x
+                                          " media="(min-width: 768px)" />
+                <source srcset="
+                                            ./../images/images_portfolio/services_img_1_mob.jpg    1x,
+                                            ./../images/images_portfolio/services_img_1_mob_2x.jpg 2x
+                                          " media="(max-width: 767px)" />
+                <img src="./../images/images_portfolio/services_img_1.jpg" width="370" alt="Технокряк">
+            </picture>
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
@@ -70,7 +134,24 @@
                 <li class="portfolio-item list">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_2.jpg" width="370" alt="Постер с двумя баскетболистами">
+
+            <picture>
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_2.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_2_2x.jpg 2x
+                                                      " media="(min-width: 1200px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_2_tab.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_2_tab_2x.jpg 2x
+                                                      " media="(min-width: 768px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_2_mob.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_2_mob_2x.jpg 2x
+                                                      " media="(max-width: 767px)" />
+            <img src="./../images/images_portfolio/services_img_2.jpg" width="370" alt="Постер с двумя баскетболистами">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -84,7 +165,24 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_3.jpg" width="370" alt="Kjujnbg ресторана Seafood">
+
+            <picture>
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_3.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_3_2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_3_tab.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_3_tab_2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_3_mob.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_3_mob_2x.jpg 2x
+                                                                  " media="(max-width: 767px)" />
+                <img src="./../images/images_portfolio/services_img_3.jpg" width="370" alt="Kjujnbg ресторана Seafood">
+            </picture>
+
+                       
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -97,7 +195,24 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_4.jpg" width="370" alt="Фото наушников">
+
+            <picture>
+                <source srcset="
+                                                                                ./../images/images_portfolio/services_img_4.jpg    1x,
+                                                                                ./../images/images_portfolio/services_img_4_2x.jpg 2x
+                                                                              " media="(min-width: 1200px)" />
+                <source srcset="
+                                                                                ./../images/images_portfolio/services_img_4_tab.jpg    1x,
+                                                                                ./../images/images_portfolio/services_img_4_tab_2x.jpg 2x
+                                                                              " media="(min-width: 768px)" />
+                <source srcset="
+                                                                                ./../images/images_portfolio/services_img_4_mob.jpg    1x,
+                                                                                ./../images/images_portfolio/services_img_4_mob_2x.jpg 2x
+                                                                              " media="(max-width: 767px)" />
+                <img src="./../images/images_portfolio/services_img_4.jpg" width="370" alt="Фото наушников">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -111,7 +226,25 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_5.jpg" width="370" alt="Белая коробочка и коричневая коробочка разных размеров">
+
+            <picture>
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_5.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_5_2x.jpg 2x
+                                                      " media="(min-width: 1200px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_5_tab.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_5_tab_2x.jpg 2x
+                                                      " media="(min-width: 768px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_5_mob.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_5_mob_2x.jpg 2x
+                                                      " media="(max-width: 767px)" />
+            <img src="./../images/images_portfolio/services_img_5.jpg" width="370"
+                alt="Белая коробочка и коричневая коробочка разных размеров">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -125,7 +258,24 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_6.jpg" width="370" alt="Экран монитора с информацией">
+
+            <picture>
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_6.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_6_2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_6_tab.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_6_tab_2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_6_mob.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_6_mob_2x.jpg 2x
+                                                                  " media="(max-width: 767px)" />
+<img src="./../images/images_portfolio/services_img_6.jpg" width="370" alt="Экран монитора с информацией">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -139,7 +289,24 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_7.jpg" width="370" alt="Разворот журнала с иллюстрациями и текстом">
+
+            <picture>
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_7.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_7_2x.jpg 2x
+                                                      " media="(min-width: 1200px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_7_tab.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_7_tab_2x.jpg 2x
+                                                      " media="(min-width: 768px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_7_mob.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_7_mob_2x.jpg 2x
+                                                      " media="(max-width: 767px)" />
+<img src="./../images/images_portfolio/services_img_7.jpg" width="370" alt="Разворот журнала с иллюстрациями и текстом">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -153,7 +320,24 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_8.jpg" width="370" alt="Бирка с логотипом проекта LAB">
+
+            <picture>
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_8.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_8_2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_8_tab.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_8_tab_2x.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+                <source srcset="
+                                                                    ./../images/images_portfolio/services_img_8_mob.jpg    1x,
+                                                                    ./../images/images_portfolio/services_img_8_mob_2x.jpg 2x
+                                                                  " media="(max-width: 767px)" />
+<img src="./../images/images_portfolio/services_img_8.jpg" width="370" alt="Бирка с логотипом проекта LAB">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -167,7 +351,25 @@
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link link">
                         <div class="portfolio-top-text">
-                        <img src="./../images/images_portfolio/services_img_9.jpg" width="370" alt="Рабочий стол с ноутбуком, на котором печатают">
+
+            <picture>
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_9.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_9_2x.jpg 2x
+                                                      " media="(min-width: 1200px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_9_tab.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_9_tab_2x.jpg 2x
+                                                      " media="(min-width: 768px)" />
+                <source srcset="
+                                                        ./../images/images_portfolio/services_img_9_mob.jpg    1x,
+                                                        ./../images/images_portfolio/services_img_9_mob_2x.jpg 2x
+                                                      " media="(max-width: 767px)" />
+<img src="./../images/images_portfolio/services_img_9.jpg" width="370"
+    alt="Рабочий стол с ноутбуком, на котором печатают">
+            </picture>
+
+                        
                         <p lang="uk" class="portfolio-item-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                             сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
@@ -194,12 +396,13 @@
                             <ul class="address__list list">
                                 <li class="address__item"><a href="https://goo.gl/maps/ax9FMWG5TgbAmKss7"
                                         class="address__link link" target="_blank" rel="noopener noreferrer nofollow">г.
-                                        Киев,
-                                        пр-т Леси Украинки, 26</a></li>
+                                        Киев, пр-т Леси Украинки, 26</a></li>
                                 <li class="address__item"><a href="mailto:info@devstudio.com"
                                         class="address__mail link">info@devstudio.com</a>
                                 </li>
-                                <li class="address__item"><a href="tel:+380961111111" class="address__tel link">+38 096 111 11 11</a></li>
+                                <li class="address__item"><a href="tel:+380961111111" class="address__tel link">+38 096 111
+                                        11
+                                        11</a></li>
                             </ul>
                         </address>
                     </div>
@@ -251,20 +454,22 @@
     
             <form class="subscribe">
                 <h4 lang="uk" class="footer__title">Підпишіться на розсилку</h4>
+                <div class="subscribe__items">
+                    <input type="email" class="subscribe__email" name="subscribe-email" id="subscribe-email"
+                        placeholder="E-mail">
     
-                <input type="email" class="subscribe__email" name="subscribe-email" id="subscribe-email"
-                    placeholder="E-mail">
-    
-                <button class="subscribe__btn btn" type="submit">Підписатися
-                    <svg class="subscribe__icon-telegram-btn" width="24" height="24">
-                        <use href="./../images/icons.svg#icon-telegram_icon_send"></use>
-                    </svg>
-                </button>
+                    <button class="subscribe__btn btn" type="submit">Підписатися
+                        <svg class="subscribe__icon-telegram-btn" width="24" height="24">
+                            <use href="./../images/icons.svg#icon-telegram_icon_send"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
     
     
     
         </div>
     </footer>
+    <script src="./../js/menu.js"></script>
 </body>
 </html>

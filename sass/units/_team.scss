@@ -2,12 +2,6 @@
     background: #F5F4FA;
     padding-top: 60px;
     padding-bottom: 60px;
-    
-        @include media(768px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-    
         @include media(1200px) {
             padding-top: var(--section-indent);
             padding-bottom: var(--section-indent);
@@ -16,10 +10,6 @@
 
 .team__title {
     margin-bottom: 30px;
-    @include media(768px) {
-           margin-bottom: 30px;
-        }
-    
         @include media(1200px) {
         margin-bottom: 50px;
         }
