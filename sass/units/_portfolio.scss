@@ -111,6 +111,18 @@
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 63px;
+            @include media(480px) {
+                        padding-top: 77px;
+                        padding-left: 24px;
+                        padding-right: 24px;
+                        padding-bottom: 77px;
+                }
+                        @include media(768px) {
+                            padding-top: 49px;
+                            padding-left: 24px;
+                            padding-right: 24px;
+                            padding-bottom: 77px;
+                        }
     background: rgba(33, 150, 243, 0.9);
     height: 100%;
     transform: translateY(100%);

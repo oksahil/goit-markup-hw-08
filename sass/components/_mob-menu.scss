@@ -81,6 +81,8 @@
 .mob-menu-mail {
     @include fonts(500, 24px, 28px, 0.02em);
     color: var(--color-text);
+    justify-content: center;
+    align-items: baseline;
 
  
 }
@@ -112,8 +114,3 @@
 
 }
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
