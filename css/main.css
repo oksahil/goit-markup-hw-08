@@ -431,6 +431,12 @@ body {
   margin-top: 64px;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .hero {
   background-color: #2F303A;
   padding-top: 118px;
