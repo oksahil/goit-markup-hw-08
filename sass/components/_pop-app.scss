@@ -30,8 +30,16 @@
         }
 }
 .modal-window {
+    width: 100%;
+    min-height: 500px;
+    @media screen and (min-width:480px) {
+                width: 450px;
+                min-height: 609px;
+            }
+    @media screen and (min-width:1200px) {
     width: 528px;
     min-height: 581px;
+                    }
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -55,7 +63,14 @@
 }
 
 .modal-window-title {
-    @include fonts(700, 20px, 23px, 0.03em);
+    @include fonts(700, 18px, 30px, 0.03em);
+        @media screen and (min-width:480px) {
+        @include fonts(700, 20px, 30px, 0.03em);
+            }
+        
+            @media screen and (min-width:1200px) {
+            @include fonts(700, 20px, 23px, 0.03em);
+            }
     text-align: center;
     color: var(--color-title);
     margin-bottom: 12px;
@@ -123,12 +138,17 @@
 }
 
 .agreement-link {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    @include fonts(null, 12px, 14px, 0.03em);
     text-decoration-line: underline;
     color: var(--color-aktive);
     margin-left: 5px;
+    @media screen and (min-width:480px) {
+    @include fonts(null, 12px, 14px, 0.03em);
+                }
+            
+    @media screen and (min-width:1200px) {
+    @include fonts(null, 14px, 24px, 0.03em);
+                }
 }
 
 .modal-btn-form {
@@ -187,8 +207,15 @@
 
 .modal-form-agreement {
     @include center;
-    @include fonts(null, 14px, 24px, 0.03em);
+    @include fonts(null, 12px, 14px, 0.03em);
     color: var(--color-text);
+        @media screen and (min-width:480px) {
+                @include fonts(null, 12px, 14px, 0.03em);
+            }
+        
+            @media screen and (min-width:1200px) {
+                @include fonts(null, 14px, 24px, 0.03em);
+            }
     & span { 
             width: 16px;
             height: 15px;
