@@ -1,10 +1,12 @@
 .open-menu-btn {
     margin-left: auto;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 16px;
     background-color: transparent;
     border: 0px;
-    margin-right: 10px;
+    margin-right: 23px;
+    margin-bottom: 22px;
+ 
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -21,6 +23,7 @@
     width: 100vw;
     height: 100vh;
     top: 0px;
+    left: 0px;
     background-color: #ffffff;
     padding-top: 48px;
     padding-bottom: 48px;

@@ -123,6 +123,7 @@ body {
 }
 
 .btn {
+  border: 0px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover, .btn:focus {
@@ -242,11 +243,12 @@ body {
 
 .open-menu-btn {
   margin-left: auto;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
   background-color: transparent;
   border: 0px;
-  margin-right: 10px;
+  margin-right: 23px;
+  margin-bottom: 22px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -264,6 +266,7 @@ body {
   width: 100vw;
   height: 100vh;
   top: 0px;
+  left: 0px;
   background-color: #ffffff;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -407,10 +410,20 @@ body {
 .contakty__tel,
 .contakty__mail {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .navigation__link,
+.contakty__tel,
+.contakty__mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contakty__tel,
@@ -602,6 +615,11 @@ body {
   color: var(--color-title);
   margin-bottom: 10px;
 }
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .benefits-title {
+    text-align: center;
+  }
+}
 
 .benefits-icon-item {
   max-width: 450px;
@@ -643,7 +661,6 @@ body {
 }
 
 .bisness {
-  padding-top: var(--section-indent);
   padding-bottom: var(--section-indent);
   display: none;
 }
@@ -861,6 +878,7 @@ body {
   color: #212121;
   padding: 6px 22px;
   border-radius: 4px;
+  border: 0px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover, .portfolio-btn:focus {
